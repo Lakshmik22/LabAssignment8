@@ -70,7 +70,7 @@ void merge(int arr[], int l, int m, int r)
 
 	/* create temp arrays */
 	int *L = malloc(sizeof(int) * n1);
-	int *R = malloc(sizeod(int) * n2);
+	int *R = malloc(sizeof(int) * n2);
 	extraMemoryAllocated += sizeof(int) * n1;
 	extraMemoryAllocated += sizeof(int) * n2;
 
