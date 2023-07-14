@@ -69,8 +69,10 @@ void merge(int arr[], int l, int m, int r)
 	int n2 = r - m; 
 
 	/* create temp arrays */
-	int L[n1], R[n2]; 
-	extraMemoryAllocated += (n1 + n2);
+	int *L = malloc(sizeof(int) * n1);
+	int *R = malloc(sizeod(int) * n2);
+	extraMemoryAllocated += sizeof(int) * n1;
+	extraMemoryAllocated += sizeof(int) * n2;
 
 	/* Copy data to temp arrays L[] and R[] */
 	for (i = 0; i < n1; i++) 
@@ -114,6 +116,8 @@ void merge(int arr[], int l, int m, int r)
 		j++; 
 		k++; 
 	} 
+	free(L);
+	free(R);
 } 
 
 
