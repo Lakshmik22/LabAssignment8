@@ -43,7 +43,6 @@ void heapify(int arr[], int n, int i)
 // extraMemoryAllocated counts bytes of memory allocated
 void heapSort(int arr[], int n)
 {
-extraMemoryAllocated += 4;
 	// Build heap (rearrange array) 
 	for (int i = n / 2 - 1; i >= 0; i--) 
 		heapify(arr, n, i); 
