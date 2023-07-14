@@ -184,7 +184,7 @@ void printArray(int pData[], int dataSz)
 	{
 		printf("%d ",pData[i]);
 	}
-	printf("\n\n");
+	printf("\n\t");
 	
 }
 
